@@ -1,5 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(object, board)
+  !(object[index] == "  " || object[index] == "")
 
   if index == 0
     return true
