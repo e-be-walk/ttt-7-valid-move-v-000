@@ -5,7 +5,7 @@ def valid_move?(object, board)
     return true
   else
     return false
-  end   
+  end
 end
 
 
