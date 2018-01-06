@@ -2,7 +2,7 @@
 def valid_move?(object, board)
   !(object[index] == "  " || object[index] == "")
 
-  if index == 0
+  if object[index] == 0
     return true
   elsif index.between?(0,8) && !position_taken?(board, index)
     return true
