@@ -1,16 +1,8 @@
 # code your #valid_move? method here
 def valid_move?(object, board)
-  !(object[index] == "  " || object[index] == "")
-
-  if object[index] == 0
+  
+  if index.between?(0,8) && object[index] == "   "
     return true
-  elsif index.between?(0,8) && !position_taken?(board, index)
-    return true
-  elsif index.between?(0,8) && position_taken(board, index)
-    return false
-  else
-    return false
-
   end
 end
 
