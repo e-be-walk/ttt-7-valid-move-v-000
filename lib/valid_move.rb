@@ -4,19 +4,19 @@ def valid_move?(object, board)
     return true
   else
     return false
-  end 
+  end
 end
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def position_taken?(object, index)
-  !(object[index] == "  " || object[index] == "")
+def position_taken?(board, index)
+  !(board[index] == "  " || board[index] == "")
 
-  if object[index] == "X" || object[index] == "O"
+  if board[index] == "X" || board[index] == "O"
     return true
-  elsif object[index] == "  "
+  elsif board[index] == "  "
     return false
-  else object[index] == nil
+  else board[index] == nil
     return false
 
   end
