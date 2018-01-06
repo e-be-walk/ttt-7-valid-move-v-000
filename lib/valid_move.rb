@@ -8,9 +8,9 @@ def position_taken?(object, index)
   if object[index] == "X" || object[index] == "O"
     return true
   elsif object[index] == "  "
-    return false 
+    return false
   else object[index] == nil
     return false
 
-  end 
+  end
 end
